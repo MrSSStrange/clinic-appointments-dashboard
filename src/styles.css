@@ -1,0 +1,344 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #14202b;
+  background: #eef4f7;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.page {
+  width: min(1440px, 100%);
+  margin: 0 auto;
+  padding: 28px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 42px;
+  border-radius: 34px;
+  color: #ffffff;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(80, 166, 255, 0.22), transparent 32%),
+    linear-gradient(135deg, #0e1721, #24384a);
+  box-shadow: 0 24px 60px rgba(18, 40, 56, 0.18);
+}
+
+.eyebrow {
+  display: block;
+  margin-bottom: 8px;
+  color: #80d6ff;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(36px, 6vw, 64px);
+  letter-spacing: -0.06em;
+}
+
+.hero p {
+  max-width: 760px;
+  margin: 12px 0 0;
+  color: #d7e2ea;
+  font-size: 22px;
+}
+
+.heroCard {
+  min-width: 170px;
+  padding: 26px;
+  border-radius: 28px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.heroCard strong {
+  display: block;
+  font-size: 54px;
+}
+
+.heroCard span {
+  color: #d7e2ea;
+  font-size: 18px;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+  margin: 28px 0;
+}
+
+.statCard,
+.panel,
+.content,
+.appointmentCard {
+  border: 1px solid #d7e2e8;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 18px 45px rgba(26, 44, 57, 0.08);
+}
+
+.statCard {
+  padding: 24px;
+  border-radius: 22px;
+}
+
+.statCard strong {
+  display: block;
+  font-size: 42px;
+  line-height: 1;
+}
+
+.statCard span {
+  display: block;
+  margin-top: 8px;
+  color: #64727d;
+  font-weight: 800;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 390px 1fr;
+  gap: 28px;
+}
+
+.panel,
+.content {
+  border-radius: 28px;
+}
+
+.formPanel {
+  padding: 26px;
+}
+
+.formPanel h2 {
+  margin: 0 0 20px;
+  font-size: 28px;
+}
+
+label {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 16px;
+  color: #53646d;
+  font-weight: 800;
+}
+
+input,
+select {
+  width: 100%;
+  height: 54px;
+  border: 1px solid #cfdae0;
+  border-radius: 16px;
+  padding: 0 18px;
+  color: #14202b;
+  background: #ffffff;
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  border-color: #2e9adf;
+  box-shadow: 0 0 0 4px rgba(46, 154, 223, 0.12);
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.primaryButton,
+.ghostButton,
+.deleteButton {
+  height: 54px;
+  border: 0;
+  border-radius: 16px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.primaryButton {
+  width: 100%;
+  color: #ffffff;
+  background: #2e9adf;
+}
+
+.ghostButton {
+  padding: 0 18px;
+  color: #16354c;
+  background: #e5eef5;
+}
+
+.deleteButton {
+  padding: 0 18px;
+  color: #8a1d16;
+  background: #ffe8e5;
+}
+
+.content {
+  padding: 26px;
+}
+
+.toolbar {
+  display: grid;
+  grid-template-columns: 1fr 210px 220px 120px;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.appointmentsList {
+  display: grid;
+  gap: 16px;
+}
+
+.appointmentCard {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px;
+  border-radius: 24px;
+}
+
+.appointmentMain {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.dateBox {
+  width: 96px;
+  padding: 14px;
+  border-radius: 18px;
+  text-align: center;
+  background: #eff6fb;
+}
+
+.dateBox strong {
+  display: block;
+  font-size: 24px;
+}
+
+.dateBox span {
+  display: block;
+  margin-top: 6px;
+  color: #687a87;
+  font-weight: 800;
+}
+
+.appointmentCard h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.appointmentCard p {
+  margin: 8px 0;
+  color: #1f3344;
+  font-size: 18px;
+}
+
+.appointmentCard span {
+  color: #6c7b86;
+  font-weight: 700;
+}
+
+.appointmentActions {
+  display: grid;
+  grid-template-columns: 180px 120px;
+  align-items: center;
+  gap: 12px;
+}
+
+.statusSelect {
+  font-weight: 900;
+}
+
+.statusSelect.new {
+  color: #1f5aa6;
+  background: #e8f1ff;
+}
+
+.statusSelect.confirmed {
+  color: #057a55;
+  background: #dcfce7;
+}
+
+.statusSelect.completed {
+  color: #5b4b00;
+  background: #fef3c7;
+}
+
+.statusSelect.cancelled {
+  color: #b91c1c;
+  background: #fee2e2;
+}
+
+.emptyState {
+  padding: 70px 20px;
+  border: 2px dashed #c9d8df;
+  border-radius: 24px;
+  color: #667782;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+@media (max-width: 1100px) {
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .layout,
+  .toolbar {
+    grid-template-columns: 1fr;
+  }
+
+  .hero,
+  .appointmentCard {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .appointmentActions {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 16px;
+  }
+
+  .hero {
+    padding: 28px;
+  }
+
+  .statsGrid,
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+
+  .appointmentMain {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
