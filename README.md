@@ -4,7 +4,7 @@ React TypeScript dashboard for managing clinic appointments, doctors, patients a
 
 ## 🚀 Demo
 
-Live demo will be available after GitHub Pages deployment.
+[Open Live Demo](https://mrssstrange.github.io/clinic-appointments-dashboard/)
 
 ---
 
